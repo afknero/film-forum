@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.film {
+    @apply box-border border-2 border-solid border-silver rounded-sm cursor-pointer hover:border-green;
+}
+
+.nav-link {
+    @apply text-sm hover:text-white cursor-pointer;
+}
+
+.watch {
+    @apply p-[5px] border-2 border-grey-dark;
+}

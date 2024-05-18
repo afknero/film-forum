@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="/styles/main.css" type="text/css" media="screen" charset="utf-8">
+</head>
+<body class="bg-grey m-0 p-0 min-h-screen box-border text-grey-light">
+	<header class="bg-grey-dark flex items-center justify-center">
+		<nav class="w-900 flex items-center justify-between">
+			<a href="/">
+				<img src="/img/letterboxd-decal-dots-pos-mono-500px.png" width="40px" height="40px" draggable="false" class="inline-block">
+			</a>
+			<ul class="flex">
+				<li class="py-10 px-20"><a class="nav-link">SIGN IN</a></li>
+				<li class="py-10 px-20"><a href="/register" class="nav-link">CREATE ACCOUNT</a></li>
+				<li class="py-10 px-20"><a href="/films/" class="nav-link">FILMS</a></li>
+				<li class="py-10 pl-20 flex items-center">
+					<input type="text" id="search-input" class="rounded-xl w-100 text-center">
+				</li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div id="content" class="flex justify-center">		
+		{{{ body }}}
+	</div>
+
+	<script src="/scripts/main.js"></script>
+</body>
+</html>

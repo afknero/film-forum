@@ -1,0 +1,29 @@
+<div id="home-container" class="text-white">
+    <div class="relative">
+        <div id="backdrop" class="relative mix-blend-overlay w-900">
+            <img src="/img/ycnO0cjsAROSGJKuMODgRtWsHQw.jpg" draggable="false" class="w-900 opacity-60">
+        </div>
+
+        <div class="absolute top-3/4 left-1/2 transform -translate-x-1/2 text-center">
+            <h2 class="text-2xl font-bold">Track films you've watched.</h2>
+            <br>
+            <h2 class="text-2xl font-bold">Save those you want to see.</h2>
+            <br>  
+            <h2 class="text-2xl font-bold">Tell your friends what's good.</h2>
+            <br>
+            <a href="/register" class="bg-[#008000] p-10">Create Account</a>
+        </div>
+    </div>
+
+    <div class="text-sm py-10 mt-100">TRENDING FILMS THIS WEEK</div>
+    <hr class="py-10">
+    <div id="featured" class="flex items-center justify-between">
+        {{#each films}}
+        <div class="film">
+            <a href="/film/{{this.id}}">
+                <img src="{{this.poster}}" class="max-h-200" draggable="false" title="{{this.title}} ({{this.year}}) {{this.average}}">
+            </a>
+        </div>
+        {{/each}}
+    </div>
+</div>

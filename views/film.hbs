@@ -1,0 +1,25 @@
+{{#if username}}
+
+{{/if}}
+
+<div id="film-container relative">
+    <div id="backdrop" class="relative mix-blend-overlay w-[1000px]">
+        <img src="{{film.backdrop}}" draggable="false" class="w-[1000px] opacity-60">
+    </div>
+    <div class="flex algin-center justify-center py-20 text-white absolute left-1/2 transform -translate-x-1/2 -translate-y-1/4">
+        <div class="w-200 text-xs">
+            <img src="{{film.poster}}" class="w-200">
+            <section class="my-20">
+                <div class="p-[5px] border-2 border-grey-dark bg-grey-light">WHERE TO WATCH</div>
+                <div class="watch">AMAZON US</div>
+                <div class="watch">APPLE TV US</div>
+                <div class="watch">Google Play US</div>
+            </section>
+        </div>
+        <div class="pl-[50px]">
+            <span class="text-xl font-bold">{{film.title}}</span>
+            <span class="text-lg font-thin">{{film.year}}</span>    
+            <p class="text-lg w-[650px] py-20">{{film.overview}}</p>
+        </div>
+    </div>
+</div>

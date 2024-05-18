@@ -1,0 +1,14 @@
+<div class="text-silver py-20">
+    <h2 class="py-20">JOIN FILMFORUM</h2>
+    {{#if error}}
+        <div class="text-[#FF0000]">{{error}}</div>
+    {{/if}}
+    <form action="POST">
+        <p class="py-10">Username</p>
+        <input type="text" name="username" class="w-200 h-[30px] rounded-md text-center text-black">
+        <p class="py-10">Password</p>
+        <input type="text" name="password" class="w-200 h-[30px] rounded-md text-center text-black">
+        <br>
+        <button class="my-20 p-10 bg-grey-dark rounded-lg">SIGN UP</button>
+    </form>
+</div>

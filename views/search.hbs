@@ -1,0 +1,27 @@
+<div class="w-900">
+    <ul id="search-results" results="{{results}}">
+        {{#each films}}
+        <li class="flex items-start py-20 text-white">
+            <img src="{{this.poster}}" draggable="false" class="w-80">
+            <div class="pl-20">
+                <h2>
+                    <span class="font-bold hover:text-[#0284c7]">
+                    <a href="/film/{{this.id}}">{{this.title}}</a>
+                    </span>
+                    <span class="font-thin">{{this.year}}</span>    
+                </h2>
+                <p class="text-sm">{{this.overview}}</p>
+            </div>
+        </li>
+        <hr>
+        {{/each}}
+    </ul>
+
+    <div id="no-results" class="py-10 text-silver hidden">
+        <h2 class="py-10">NO RESULTS</h2>
+        <hr>
+        <p class="py-10">There were no matches for your search term.</p>
+    </div>
+</div>
+
+<script src="/scripts/search.js"></script>
